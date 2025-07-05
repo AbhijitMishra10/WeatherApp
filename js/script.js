@@ -1,7 +1,7 @@
 // A basic weather function which takes a parameter 'city' and returns a weather promise, either in the form of a resolved(success) one or rejected(failure) one
 function weather(city) {
     return new Promise((resolve,reject) => {
-        fetch(`https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=f754573ebbd347b67508eb33c353bc25&units=metric`)
+        fetch(`https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=85510a4d4a383a5d17351e4c5aab24a3&units=metric`)
             .then((response) => {
                 if(!response.ok) {
                     reject('Data cannot be fetched');
@@ -74,7 +74,7 @@ function onSuccess(position) {
     const lat = position.coords.latitude
     const lon = position.coords.longitude
 
-    const api = 'f754573ebbd347b67508eb33c353bc25'
+    const api = '85510a4d4a383a5d17351e4c5aab24a3'
     const url = `https://api.openweathermap.org/data/2.5/weather?lat=${lat}&lon=${lon}&appid=${api}&units=metric`
 
     fetch(url) 
@@ -121,7 +121,7 @@ function error() {
 
 // This function also takes a parameter city, which is provided via the input field and gives the updated weather every 3 hours for the next 5 days
 function getForecast(city) {
-    const Forecast = `https://api.openweathermap.org/data/2.5/forecast?q=${city}&appid=f754573ebbd347b67508eb33c353bc25&units=metric` 
+    const Forecast = `https://api.openweathermap.org/data/2.5/forecast?q=${city}&appid=85510a4d4a383a5d17351e4c5aab24a3&units=metric` 
 
     fetch(Forecast) 
         .then((res) => {
