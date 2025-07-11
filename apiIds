@@ -1,2 +1,3 @@
 Url = `https://api.weatherapi.com/v1/forecast.json?key=${apiKey}&q=${city}&days=5&aqi=no&alerts=no`
 api_key = 'd446d6d7fbf84c0abde63545250907'
+API = `https://api.weatherapi.com/v1/forecast.json?key=d446d6d7fbf84c0abde63545250907&q=London&days=5&aqi=no&alerts=no`
